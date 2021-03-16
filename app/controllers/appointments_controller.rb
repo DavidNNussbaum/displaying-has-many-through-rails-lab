@@ -18,7 +18,7 @@ class AppointmentsController < ApplicationController
     end
 
     def real_time
-      "Appointment Date and Time Are: #{DateTime.strftime(“%m-%d-%Y”)} + "at" +#{ DateTime.strftime (“ %I:%M")}"
+      "Appointment Date and Time Are: #{DateTime.strftime("%m-%d-%Y")} + "at" +#{ DateTime.strftime ("%I:%M")}"
     end
   
     private

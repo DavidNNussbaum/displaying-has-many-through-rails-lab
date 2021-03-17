@@ -2,7 +2,7 @@
  
 Appointments:
   <% @patient.appointments.each do |app| %>
-    <%= app.appointment_datetime.real_time %>
+    <%= app.real_time %>
     <%= link_to app.doctor.name, doctor_path(app.doctor) %>  
   <% end %>
 

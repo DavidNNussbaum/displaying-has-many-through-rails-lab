@@ -17,10 +17,6 @@ class AppointmentsController < ApplicationController
       redirect_to appointments_path
     end
 
-    def real_time
-      "Appointment Date and Time Are: #{DateTime.strftime("%m-%d-%Y")} + "at" +#{ DateTime.strftime("%I:%M")}"
-    end
-  
     private
   
     def appointment_params

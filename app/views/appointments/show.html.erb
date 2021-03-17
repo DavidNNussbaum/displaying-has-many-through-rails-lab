@@ -1,5 +1,4 @@
-h2><%= @appointment.appointment_datetime.real_time %></h2>
-h2><%= @appointment.patient %></h2>
-h2><%= @appointment.doctor %></h2>
- 
+h2><%= @appointment.real_time %></h2>
+<%= link_to @appointment.patient.name, patient_path(@appointment.patient) %>
+<%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %> 
  
